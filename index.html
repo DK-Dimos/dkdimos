@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DK'dimos – Enterprise Pages and Systems</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- =========================================
+       Sticky Header / Navbar
+       ========================================= -->
+  <header class="header" id="site-header">
+    <div class="header__inner container">
+      <!-- Logo de texto (brand) -->
+      <a href="#hero" class="header__brand" aria-label="Homepage">
+        <div class="brand-mark brand-mark--nebula" aria-label="DK'dimos Logo">
+          <div class="nebula-core"></div>
+          <div class="nebula-cloud nebula-cloud--1"></div>
+          <div class="nebula-cloud nebula-cloud--2"></div>
+          <div class="nebula-cloud nebula-cloud--3"></div>
+          <div class="nebula-cloud nebula-cloud--4"></div>
+          <div class="nebula-dust"></div>
+        </div>
+        <span class="brand-text">DK'dimos</span>
+      </a>
+
+      <!-- Navegação desktop -->
+      <nav class="nav" aria-label="Primary navigation">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#hero" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#layouts" class="nav__link">Layouts</a></li>
+          <li class="nav__item"><a href="#layouts" class="nav__link">Portfolios</a></li>
+          <li class="nav__item"><a href="#contato" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Ações do header -->
+      <div class="header__actions">
+        <button class="btn btn--ghost header__login" type="button">
+          Client Area
+        </button>
+
+        <!-- Menu mobile -->
+        <button
+          class="header__menu-toggle"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span class="header__menu-line"></span>
+          <span class="header__menu-line"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navegação mobile -->
+    <nav class="nav-mobile" aria-label="Mobile navigation">
+      <ul class="nav-mobile__list">
+        <li class="nav-mobile__item"><a href="#hero" class="nav-mobile__link">Home</a></li>
+        <li class="nav-mobile__item"><a href="#layouts" class="nav-mobile__link">Layouts</a></li>
+        <li class="nav-mobile__item"><a href="#layouts" class="nav-mobile__link">Portfolios</a></li>
+        <li class="nav-mobile__item"><a href="#contato" class="nav-mobile__link">Contact</a></li>
+        <li class="nav-mobile__item nav-mobile__item--divider"></li>
+        <li class="nav-mobile__item">
+          <button class="btn btn--ghost btn--full" type="button">Client Area</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- =========================================
+       Hero Section (above the fold)
+       ========================================= -->
+  <main>
+    <section class="hero" id="hero" aria-labelledby="hero-heading">
+      <!-- Nebula/Astronomical Image Container -->
+      <div class="hero__image-container">
+        <img 
+          src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=1920&q=80" 
+          alt="Purple cosmic nebula background" 
+          class="hero__image"
+        />
+      </div>
+
+      <div class="hero__inner container">
+        <!-- Coluna esquerda: texto -->
+        <div class="hero__content">
+          <!-- Subtítulo pequeno -->
+          <p class="hero__eyebrow">
+            Invest in Technology for Your Business
+          </p>
+
+          <!-- Headline principal -->
+          <h1 class="hero__title" id="hero-heading">
+            Custom Enterprise Pages and Systems
+          </h1>
+
+          <!-- Parágrafo de apoio -->
+          <p class="hero__subtitle">
+            We are focused on delivering high-quality digital solutions, offering both ready-made
+            products and fully customized projects, built from scratch to meet exactly what your
+            business needs.
+          </p>
+
+          <!-- Único CTA principal -->
+          <div class="hero__cta-row">
+            <button
+              class="btn btn--primary btn--lg hero__cta-main"
+              type="button"
+              id="hero-layouts-cta"
+            >
+              Check out our layouts
+            </button>
+            </div>
+          </div>
+
+        <!-- Coluna direita: visual tech / futurista -->
+        <div class="hero__visual" aria-hidden="true">
+          <!-- Página Principal (maior, central) -->
+          <div class="hero-device hero-device--primary">
+            <div class="hero-device__header">
+              <span class="hero-device__dot hero-device__dot--red"></span>
+              <span class="hero-device__dot hero-device__dot--yellow"></span>
+              <span class="hero-device__dot hero-device__dot--green"></span>
+            </div>
+            <div class="hero-device__body">
+              <div class="hero-device__sidebar">
+                <span class="hero-device__pill"></span>
+                <span class="hero-device__pill hero-device__pill--alt"></span>
+                <span class="hero-device__pill"></span>
+            </div>
+              <div class="hero-device__content">
+                <div class="hero-device__row hero-device__row--wide"></div>
+                <div class="hero-device__row hero-device__row--medium"></div>
+                <div class="hero-device__row hero-device__row--short"></div>
+                <div class="hero-device__grid">
+                  <span class="hero-device__card"></span>
+                  <span class="hero-device__card"></span>
+                  <span class="hero-device__card"></span>
+                  <span class="hero-device__card"></span>
+        </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Página Secundária (menor, atrás à esquerda) -->
+          <div class="hero-device hero-device--secondary">
+            <div class="hero-device__header">
+              <span class="hero-device__dot hero-device__dot--red"></span>
+              <span class="hero-device__dot hero-device__dot--yellow"></span>
+              <span class="hero-device__dot hero-device__dot--green"></span>
+            </div>
+            <div class="hero-device__body">
+              <div class="hero-device__sidebar">
+                <span class="hero-device__pill"></span>
+                <span class="hero-device__pill"></span>
+              </div>
+              <div class="hero-device__content">
+                <div class="hero-device__row hero-device__row--wide"></div>
+                <div class="hero-device__row hero-device__row--medium"></div>
+                <div class="hero-device__grid">
+                  <span class="hero-device__card"></span>
+                  <span class="hero-device__card"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Página Terciária (pequena, atrás à direita) -->
+          <div class="hero-device hero-device--tertiary">
+            <div class="hero-device__header">
+              <span class="hero-device__dot hero-device__dot--red"></span>
+              <span class="hero-device__dot hero-device__dot--yellow"></span>
+              <span class="hero-device__dot hero-device__dot--green"></span>
+            </div>
+            <div class="hero-device__body">
+              <div class="hero-device__content">
+                <div class="hero-device__row hero-device__row--wide"></div>
+                <div class="hero-device__row hero-device__row--medium"></div>
+                <div class="hero-device__row hero-device__row--short"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Planeta Melhorado / Esfera digital futurista -->
+          <div class="hero-orbit">
+            <div class="hero-orbit__glow"></div>
+            <div class="hero-orbit__core"></div>
+            <div class="hero-orbit__planet">
+              <div class="hero-orbit__planet-surface"></div>
+              <div class="hero-orbit__planet-highlight"></div>
+            </div>
+            <div class="hero-orbit__ring hero-orbit__ring--one"></div>
+            <div class="hero-orbit__ring hero-orbit__ring--two"></div>
+            <div class="hero-orbit__ring hero-orbit__ring--three"></div>
+            <div class="hero-orbit__particles">
+              <span class="hero-orbit__particle"></span>
+              <span class="hero-orbit__particle"></span>
+              <span class="hero-orbit__particle"></span>
+              <span class="hero-orbit__particle"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         Segment Showcase Section (1/4 + 3/4 layout)
+         ========================================= -->
+    <section class="segment-showcase" id="layouts" aria-labelledby="segment-heading">
+      <div class="segment-showcase__inner container">
+        <!-- Left Side: Explanation Box (1/4) -->
+        <aside class="segment-showcase__explanation">
+          <div class="segment-description">
+            <h2 class="segment-description__title" id="segment-heading">
+              Segment 1
+            </h2>
+            <div class="segment-description__divider"></div>
+            <div class="segment-description__subtitle-wrapper">
+              <svg class="segment-description__icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 8H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 16H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span class="segment-description__subtitle">DK'Web</span>
+            </div>
+            <div class="segment-description__divider"></div>
+            <p class="segment-description__text">
+              Explore our curated collection of premium layouts designed to accelerate your digital presence. Each segment represents a specialized category of web solutions, from personal portfolios to enterprise-level systems.
+            </p>
+          </div>
+        </aside>
+
+        <!-- Right Side: Product Grid (3/4) -->
+        <div class="segment-showcase__grid">
+          <!-- Card 1 -->
+          <article class="segment-card" role="listitem">
+            <span class="segment-card__tag">Segment 1</span>
+            <div class="segment-card__body">
+              <h3 class="segment-card__title segment-card__title--purple1">
+                <span class="segment-card__title-content">
+                  <svg class="segment-card__icon segment-card__icon--purple1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6C4 4.89543 4.89543 4 6 4H10C10.5523 4 11 4.44772 11 5V7H18C19.1046 7 20 7.89543 20 9V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11 7H6C4.89543 7 4 7.89543 4 9V19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Personal Portfolio
+                </span>
+              </h3>
+              <p class="segment-card__description">
+                Professional personal websites to showcase your work.
+              </p>
+              <!-- Blank area for future product photos -->
+              <div class="segment-card__placeholder"></div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="segment-card" role="listitem">
+            <span class="segment-card__tag">Segment 1</span>
+            <div class="segment-card__body">
+              <h3 class="segment-card__title segment-card__title--purple2">
+                <span class="segment-card__title-content">
+                  <svg class="segment-card__icon segment-card__icon--purple2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 8H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 12L12 16L16 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Landing Page
+                </span>
+              </h3>
+              <p class="segment-card__description">
+                High-conversion pages focused on results.
+              </p>
+              <!-- Blank area for future product photos -->
+              <div class="segment-card__placeholder"></div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="segment-card" role="listitem">
+            <span class="segment-card__tag">Segment 1</span>
+            <div class="segment-card__body">
+              <h3 class="segment-card__title segment-card__title--purple3">
+                <span class="segment-card__title-content">
+                  <svg class="segment-card__icon segment-card__icon--purple3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6C4 4.89543 4.89543 4 6 4H18C19.1046 4 20 4.89543 20 6V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 8H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 16H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  One Page
+                </span>
+              </h3>
+              <p class="segment-card__description">
+                All your content in a single, elegant page.
+              </p>
+              <!-- Blank area for future product photos -->
+              <div class="segment-card__placeholder"></div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="segment-card" role="listitem">
+            <span class="segment-card__tag">Segment 1</span>
+            <div class="segment-card__body">
+              <h3 class="segment-card__title segment-card__title--purple4">
+                <span class="segment-card__title-content">
+                  <svg class="segment-card__icon segment-card__icon--purple4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 3H10M14 3H16M3 8V10M3 14V16M21 8V10M21 14V16M8 21H10M14 21H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  Complete Redesign
+                </span>
+              </h3>
+              <p class="segment-card__description">
+                Complete redesigns tailored to your vision.
+              </p>
+              <!-- Blank area for future product photos -->
+              <div class="segment-card__placeholder"></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================
+         End Segment Showcase Section
+         ========================================= -->
+
+    <!-- =========================================
+         Segment Showcase Section 2 (Orange Theme)
+         ========================================= -->
+    <section class="segment-showcase segment-showcase--orange" id="layouts-2" aria-labelledby="segment-heading-2">
+      <div class="segment-showcase__inner container">
+        <!-- Left Side: Explanation Box (1/4) -->
+        <aside class="segment-showcase__explanation">
+          <div class="segment-description segment-description--orange">
+            <h2 class="segment-description__title" id="segment-heading-2">
+              Segment 2
+            </h2>
+            <div class="segment-description__divider segment-description__divider--orange"></div>
+            <div class="segment-description__subtitle-wrapper">
+              <svg class="segment-description__icon segment-description__icon--orange" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="2" width="16" height="20" rx="2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <rect x="7" y="5" width="10" height="10" rx="1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 8H15M9 11H15M9 14H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="12" cy="19" r="1" fill="currentColor"/>
+              </svg>
+              <span class="segment-description__subtitle segment-description__subtitle--orange">DK'Lab</span>
+            </div>
+            <div class="segment-description__divider segment-description__divider--orange"></div>
+            <p class="segment-description__text">
+              Discover our comprehensive range of mobile and desktop applications built to transform your business operations. We develop custom apps tailored to your specific needs, from native mobile solutions to cross-platform applications that deliver exceptional user experiences.
+            </p>
+          </div>
+        </aside>
+
+        <!-- Right Side: Product Grid (3/4) -->
+        <div class="segment-showcase__grid">
+          <!-- Card 1 -->
+          <article class="segment-card" role="listitem">
+            <span class="segment-card__tag">Segment 2</span>
+            <div class="segment-card__body">
+              <h3 class="segment-card__title segment-card__title--orange1">
+                <span class="segment-card__title-content">
+                  <svg class="segment-card__icon segment-card__icon--orange1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6C4 4.89543 4.89543 4 6 4H10C10.5523 4 11 4.44772 11 5V7H18C19.1046 7 20 7.89543 20 9V19C20 20.1046 19.1046 21 18 21H6C4.89543 21 4 20.1046 4 19V6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11 7H6C4.89543 7 4 7.89543 4 9V19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Personal Portfolio
+                </span>
+              </h3>
+              <p class="segment-card__description">
+                Professional personal websites to showcase your work.
+              </p>
+              <!-- Blank area for future product photos -->
+              <div class="segment-card__placeholder"></div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="segment-card" role="listitem">
+            <span class="segment-card__tag">Segment 2</span>
+            <div class="segment-card__body">
+              <h3 class="segment-card__title segment-card__title--orange2">
+                <span class="segment-card__title-content">
+                  <svg class="segment-card__icon segment-card__icon--orange2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3 8H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 12L12 16L16 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  Landing Page
+                </span>
+              </h3>
+              <p class="segment-card__description">
+                High-conversion pages focused on results.
+              </p>
+              <!-- Blank area for future product photos -->
+              <div class="segment-card__placeholder"></div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="segment-card" role="listitem">
+            <span class="segment-card__tag">Segment 2</span>
+            <div class="segment-card__body">
+              <h3 class="segment-card__title segment-card__title--orange3">
+                <span class="segment-card__title-content">
+                  <svg class="segment-card__icon segment-card__icon--orange3" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6C4 4.89543 4.89543 4 6 4H18C19.1046 4 20 4.89543 20 6V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V6Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 8H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 12H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 16H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                  One Page
+                </span>
+              </h3>
+              <p class="segment-card__description">
+                All your content in a single, elegant page.
+              </p>
+              <!-- Blank area for future product photos -->
+              <div class="segment-card__placeholder"></div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="segment-card" role="listitem">
+            <span class="segment-card__tag">Segment 2</span>
+            <div class="segment-card__body">
+              <h3 class="segment-card__title segment-card__title--orange4">
+                <span class="segment-card__title-content">
+                  <svg class="segment-card__icon segment-card__icon--orange4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 8V12L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8 3H10M14 3H16M3 8V10M3 14V16M21 8V10M21 14V16M8 21H10M14 21H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                  Complete Redesign
+                </span>
+              </h3>
+              <p class="segment-card__description">
+                Complete redesigns tailored to your vision.
+              </p>
+              <!-- Blank area for future product photos -->
+              <div class="segment-card__placeholder"></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================
+         End Segment Showcase Section 2
+         ========================================= -->
+
+  </main>
+
+  <!-- Main script -->
+  <script src="script.js" defer></script>
+</body>
+</html>
